@@ -1,0 +1,18 @@
+.navigator {
+    background-color: blue;
+    display: flex; /* or inline-block, depending on your layout needs */
+    height: 50px;
+    align-items: center;
+}   
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+}
+
+#name, #dob {
+    text-align: center;
+}
+
+
