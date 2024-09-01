@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Number Generator</title>
+    <style> /*<!-- Begins the CSS styling section -->*/
+        body { /* Styles for the body element */
+            font-family: Arial, sans-serif; /* Sets the font for the entire body */
+            max-width: 600px; /* Limits the maximum width of the body */
+            margin: 0 auto; /* Centers the body horizontally */
+            padding: 20px; /* Adds padding around the body content */
+            text-align: center; /* Centers the text within the body */
+        }
+        div{ /* Styles for div elements */
+            border: 1px solid black; /* Adds a black border around the div */
+            padding: 10px; /* Adds padding inside the div */
+            background-color: lightblue; /* Sets the background color of the div */
+        }
+        input, button { /* Styles for input and button elements */
+            font-size: 16px; /* Sets the font size */
+            padding: 5px 10px; /* Adds padding inside inputs and buttons */
+        }
+        #output { /* Styles for an element with id "output" (unused in this HTML) */
+            margin-top: 20px; /* Adds top margin */
+            font-weight: bold; /* Makes the text bold */
+        }
+    </style> <!-- Ends the CSS styling section -->
+</head>
+<body> <!-- The visible part of the HTML document -->
+    <div> <!-- A container for grouping content -->
+        <h1>Fibonacci Generator</h1> <!-- Main heading of the page -->
+        <input type="number" id="n" min="1" placeholder="Enter a number"> <!-- Input field for user to enter a number -->
+        <button onclick="generateFib()">Generate</button> <!-- Button that calls generateFib() function when clicked -->
+        <p id="result"></p> <!-- Paragraph to display the result -->
+    </div>
+
+    <script> //<!-- Begins the JavaScript section -->//
+        function generateFib() /* Defines the generateFib function */
+         {
+             let n = parseInt(document.getElementById('n').value); /* Gets the input value and converts it to an integer */
+             if (n < 1) return alert("Enter a positive number"); /* Checks if input is valid, shows alert if not */
+             
+             let fib = [0, 1]; /* Initializes the Fibonacci array with first two numbers */
+             for (let i = 2; i < n; i++) /* Loop to generate Fibonacci numbers */
+              {
+                 fib[i] = fib[i-1] + fib[i-2]; /* Calculates the next Fibonacci number */
+             }
+             document.getElementById('result').textContent = `First ${n} Fibonacci numbers: ${fib.slice(0, n).join(", ")}`; /* Displays the result */
+         }
+     </script> <!-- Ends the JavaScript section -->
+</body>
+</html>
