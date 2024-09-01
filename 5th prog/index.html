@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- Declares that this is an HTML5 document -->
+<html lang="en"> <!-- Root element of the HTML page, specifies the language as English -->
+<head> <!-- Contains meta information about the HTML page -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive -->
+    <title>Simple Calculator</title> <!-- Sets the title of the web page -->
+    <link rel="stylesheet" href="prog5.css"> <!-- Links the external CSS file -->
+</head>
+<body> <!-- Contains the visible page content -->
+    <div class="calculator"> <!-- Main container for the calculator -->
+        <input type="number" id="num1" placeholder="Enter first number"> <!-- Input field for the first number -->
+        <input type="number" id="num2" placeholder="Enter second number"> <!-- Input field for the second number -->
+        <br> <!-- Line break -->
+        <button onclick="calculate('sum')">Sum</button> <!-- Button to calculate sum -->
+        <button onclick="calculate('product')">Product</button> <!-- Button to calculate product -->
+        <button onclick="calculate('difference')">Difference</button> <!-- Button to calculate difference -->
+        <button onclick="calculate('quotient')">Quotient</button> <!-- Button to calculate quotient -->
+        <br> <!-- Line break -->
+        <p id="result">Result: </p> <!-- Paragraph to display the result -->
+    </div>
+
+    <script> // Starts the JavaScript section 
+        function calculate(operation) { // Defines the calculate function
+            const num1 = parseFloat(document.getElementById('num1').value); // Gets the first number
+            const num2 = parseFloat(document.getElementById('num2').value); // Gets the second number
+            let result; // Declares a variable to store the result
+
+            switch (operation) { // Starts a switch statement based on the operation
+                case 'sum':
+                    result = num1 + num2; // Calculates the sum
+                    break;
+                case 'product':
+                    result = num1 * num2; // Calculates the product
+                    break;
+                case 'difference':
+                    result = num1 - num2; // Calculates the difference
+                    break;
+                case 'quotient':
+                    result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero'; // Calculates the quotient or handles division by zero
+                    break;
+                default:
+                    result = 'Invalid operation'; // Handles invalid operations
+            }
+
+            document.getElementById('result').textContent = `Result: ${result}`; // Displays the result
+        }
+    </script>
+</body>
+</html>

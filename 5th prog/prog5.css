@@ -1,0 +1,28 @@
+body {  
+    font-family: Arial; /* Sets the font for the entire body */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Sets the body height to 100% of the viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: #f0f0f0; /* Sets a light gray background color */
+}
+div{
+    border: 1px solid #ccc; /* Adds a light gray border to the div */
+    background-color: #4a4a4a; /* Sets a dark gray background for the div */
+    padding: 20px; /* Adds space inside the div */
+    border-radius: 5px; /* Rounds the corners of the div */
+}
+input, button {
+    background-color: antiquewhite; /* Sets a light beige background for inputs and buttons */
+    margin: 5px; /* Adds space around inputs and buttons */
+    padding: 5px; /* Adds space inside inputs and buttons */
+}
+
+#result {
+    background-color: #2ecc71; /* Sets a green background for the result */
+    color: white; /* Sets white text color for the result */
+    margin: 10px; /* Adds space around the result */
+    padding: 10px; /* Adds space inside the result */
+    text-align: center; /* Centers the text in the result */
+}
