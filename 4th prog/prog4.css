@@ -1,0 +1,38 @@
+body { /* Styles for the body element */
+    max-width: 500px; /* Sets maximum width for the body */
+    margin: auto; /* Centers the body horizontally */
+    background-color: #f0f0f0da; /* Sets a light gray background color */
+}
+
+h1 { /* Styles for h1 elements */
+    text-align: center; /* Centers the text within h1 */
+}
+
+form { /* Styles for form elements */
+    background-color: white; /* Sets white background for the form */
+    padding: 20px; /* Adds padding inside the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+}
+
+input[type="text"] { /* Styles for text input fields */
+    width: 200px; /* Sets width of text inputs */
+    padding: 5px; /* Adds padding inside text inputs */
+    border: 1px solid #ddd; /* Adds a light gray border to text inputs */
+    border-radius: 4px; /* Slightly rounds corners of text inputs */
+}
+
+input[type="submit"] { /* Styles for submit button */
+    background-color: #4CAF50; /* Sets green background for submit button */
+    color: white; /* Sets white text color for submit button */
+    padding: 10px 20px; /* Adds padding inside submit button */
+    border: none; /* Removes border from submit button */
+    border-radius: 4px; /* Slightly rounds corners of submit button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Sets font size for submit button */
+    display: block; /* Makes submit button a block-level element */
+    margin: 0 auto; /* Centers the submit button */
+}
+
+input[type="submit"]:hover { /* Styles for submit button on hover */
+    background-color: #45a049; /* Darkens the button color on hover */
+}
