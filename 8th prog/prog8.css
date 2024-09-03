@@ -1,0 +1,22 @@
+engineering-students {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+student1 , student2 , student3 {
+  background-color:pink;
+  padding: 10px;
+  border: 1px solid #6e6e6e;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #6e6e6e;
+  text-align: center;
+  width: 25%;
+  font-size: large;
+  font-weight: bold;
+}
+
+usn , name , college , branch , year-of-joining , email {
+  display: block;
+}

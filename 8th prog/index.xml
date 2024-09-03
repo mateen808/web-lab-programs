@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="prog8.css"?>
+<engineering-students>
+  <student1>
+    <usn>USN: 21KB02BS001</usn>
+    <name>Name: John Doe</name>
+    <college>College: RV College of Engineering</college>
+    <branch>Branch: Computer Science</branch>
+    <year-of-joining>Year of Joining: 2020</year-of-joining>
+    <email>Email: johndoe@example.com</email>
+  </student1>
+  <student2>
+    <usn>USN: 21KB02BS002</usn>
+    <name>Name: Jane Smith</name>
+    <college>College: MS Ramaiah Institute of Technology</college>
+    <branch>Branch: Electrical Engineering</branch>
+    <year-of-joining>Year of Joining: 2021</year-of-joining>
+    <email>Email: janesmith@example.com</email>
+  </student2>
+  <student3>
+    <usn>USN: 21KB02BS003</usn>
+    <name>Name: Alex Johnson</name>
+    <college>College: PES University</college>
+    <branch>Branch: Mechanical Engineering</branch>
+    <year-of-joining>Year of Joining: 2019</year-of-joining>
+    <email>Email: alexjohnson@example.com</email>
+  </student3>
+</engineering-students>
